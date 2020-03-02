@@ -3,8 +3,7 @@ package calculator;
 import Table.TableMain;
 import javafx.scene.control.TableRow;
 
-import java.io.File;
-import java.io.FileReader;
+import java.io.*;
 import java.util.ArrayList;
 
 import calculator.Entries;
@@ -27,7 +26,6 @@ import javafx.stage.Stage;
 import javafx.util.Callback;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.ArrayList;
 
@@ -105,6 +103,7 @@ public class Entries {
                 }
                 arr[arrIndx] += "" + (char)i;
             }
+            reader.close();
         } catch (Exception e) {
             e.printStackTrace();
         }

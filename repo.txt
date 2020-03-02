@@ -1,5 +1,2 @@
-iii,456,1,s,Variable
-iii7,456,1,s,Variable
-ghjb,56789,65789,km,Variable
-ghjbjikj000,56789,65789,km,Variable
-ghjbj,12345,2,m,Constant
+iii,4165431,10,s,Constant
+iii7,411,10,s,Variable
