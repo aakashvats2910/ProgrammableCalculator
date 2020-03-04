@@ -13,17 +13,19 @@ import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.TableColumn.CellEditEvent;
 import javafx.scene.control.cell.PropertyValueFactory;
-import javafx.scene.control.cell.TextFieldTableCell;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 import java.io.*;
 import java.util.ArrayList;
 
 public class TableMain extends Application {
+
+    // Refernce: https://stackoverflow.com/questions/39566975/tableview-make-specific-cell-or-row-editable/39568161?noredirect=1#comment106992352_39568161
 
     private File file;
 
@@ -63,6 +65,8 @@ public class TableMain extends Application {
 
         table.getColumns().addAll(Name, Measure, Error, Units, Type);
 
+        final HBox addLayout = new HBox();
+
         final HBox hBox = new HBox();
         hBox.setSpacing(20);
         hBox.setPadding(new Insets(10, 0, 0, 10));
@@ -101,7 +105,9 @@ public class TableMain extends Application {
             }
         });
 
-        updateButton.setOnAction(event -> updateToFile());
+        updateButton.setOnAction(event -> {
+            makeRowEditable();
+        });
 
         searchButton.setOnAction(event -> {
             selectedRow = -1;
@@ -114,7 +120,7 @@ public class TableMain extends Application {
                     selectedRow = i;
                     selectedEntries = list.get(i);
                     System.out.println("Selected Row :" + selectedRow);
-                    makeRowEditable();
+                    hilight();
                     updateButton.setDisable(false);
                     deleteButton.setDisable(false);
                     return;
@@ -127,6 +133,7 @@ public class TableMain extends Application {
         file = new File(System.getProperty("user.dir") + "//repo.txt");
 
         addData();
+        updateToFile();
 
         stage.setScene(scene);
         stage.show();
@@ -153,6 +160,19 @@ public class TableMain extends Application {
 
         Name.setCellFactory(StateTextFieldTableCell.forTableColumn(j -> Bindings.valueAt(editable, j).isEqualTo(Boolean.TRUE)));
         Measure.setCellFactory(StateTextFieldTableCell.forTableColumn(j -> Bindings.valueAt(editable, j).isEqualTo(Boolean.TRUE)));
+        Error.setCellFactory(StateTextFieldTableCell.forTableColumn(j -> Bindings.valueAt(editable, j).isEqualTo(Boolean.TRUE)));
+
+        updateButton.setDisable(true);
+        deleteButton.setDisable(true);
+    }
+
+    private void hilight() {
+        ObservableMap<Integer, Boolean> editable = FXCollections.observableHashMap();
+        editable.put(selectedRow, Boolean.FALSE);
+
+        Name.setCellFactory(StateTextFieldTableCell.forTableColumn(j -> Bindings.valueAt(editable, j).isEqualTo(Boolean.TRUE)));
+        Measure.setCellFactory(StateTextFieldTableCell.forTableColumn(j -> Bindings.valueAt(editable, j).isEqualTo(Boolean.TRUE)));
+        Error.setCellFactory(StateTextFieldTableCell.forTableColumn(j -> Bindings.valueAt(editable, j).isEqualTo(Boolean.TRUE)));
 
         table.setRowFactory(tv -> new TableRow<Entries>() {
             @Override
@@ -195,6 +215,7 @@ public class TableMain extends Application {
 
         addData();
         deleteButton.setDisable(true);
+        updateButton.setDisable(true);
     }
 
     private void updateToFile() {
@@ -205,6 +226,7 @@ public class TableMain extends Application {
                         ((Entries) t.getTableView().getItems().get(
                                 t.getTablePosition().getRow())
                         ).setName(t.getNewValue());
+                        updateInRepoAlpha(0, t.getNewValue());
                     }
                 }
         );
@@ -217,7 +239,7 @@ public class TableMain extends Application {
                         ((Entries) t.getTableView().getItems().get(
                                 t.getTablePosition().getRow())
                         ).setName(t.getNewValue());
-
+                        updateInRepoAlpha(1, t.getNewValue());
                     }
                 }
         );
@@ -229,6 +251,7 @@ public class TableMain extends Application {
                         ((Entries) t.getTableView().getItems().get(
                                 t.getTablePosition().getRow())
                         ).setName(t.getNewValue());
+                        updateInRepoAlpha(2, t.getNewValue());
                     }
                 }
         );
@@ -241,6 +264,7 @@ public class TableMain extends Application {
                         ((Entries) t.getTableView().getItems().get(
                                 t.getTablePosition().getRow())
                         ).setName(t.getNewValue());
+                        updateInRepoAlpha(3, t.getNewValue());
                     }
                 }
         );
@@ -252,10 +276,59 @@ public class TableMain extends Application {
                         ((Entries) t.getTableView().getItems().get(
                                 t.getTablePosition().getRow())
                         ).setName(t.getNewValue());
+                        updateInRepoAlpha(4, t.getNewValue());
                     }
                 }
         );
-        updateButton.setDisable(true);
+    }
+
+    private void updateInRepoAlpha(int columnNumber, String updateValue) {
+
+        File tempFile = new File(System.getProperty("user.dir") + "//repo1.txt");
+
+        try {
+
+            BufferedReader reader = new BufferedReader(new FileReader(file));
+            BufferedWriter writer = new BufferedWriter(new FileWriter(tempFile));
+
+            int i = 0;
+            String tempLine = "";
+            while ((tempLine = reader.readLine()) != null) {
+                String trimmed = tempLine.trim();
+                if (i == selectedRow) {
+                    switch (columnNumber) {
+                        case 0: selectedEntries.setName(updateValue);
+                            break;
+                        case 1: selectedEntries.setMeasuredValue(updateValue);
+                            break;
+                        case 2: selectedEntries.setErrorValue(updateValue);
+                            break;
+                        case 3: selectedEntries.setUnit(updateValue);
+                            break;
+                        case 4: selectedEntries.setType(updateValue);
+                            break;
+                    }
+                    trimmed = selectedEntries.getName() + ","
+                            + selectedEntries.getMeasuredValue() + ","
+                            + selectedEntries.getErrorValue() + ","
+                            + selectedEntries.getUnit() + ","
+                            + selectedEntries.getType();
+                }
+                writer.write(trimmed + "\n");
+                i++;
+            }
+
+            reader.close();
+            writer.close();
+
+            System.out.println(file.delete());
+            System.out.println(tempFile.renameTo(file));
+
+        } catch (Exception e) {
+            System.out.println("ERROR =======00 :: " + e.getMessage());
+        }
+
+
     }
 
 }

@@ -2,26 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f4312af-f507-4dc4-b97a-60e1f669a24c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/dictionary.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fsm/Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/META-INF/Calculator.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Calculator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Calculator.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Table/TableMain$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Table/TableMain$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Table/TableMain$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Table/TableMain$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Table/TableMain$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Table/TableMain$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Table/TableMain$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Table/TableMain$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Table/TableMain$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Table/TableMain$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Table/TableMain$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Table/TableMain$6.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Table/TableMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Table/TableMain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/calculator/Entries$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/calculator/Entries$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/calculator/Entries.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/calculator/Entries.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/fsm/TableViewSample$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/fsm/TableViewSample$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/fsm/TableViewSample$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/fsm/TableViewSample$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/fsm/TableViewSample$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/fsm/TableViewSample$EditingCell$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/fsm/TableViewSample$EditingCell.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/fsm/TableViewSample$Person.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/fsm/TableViewSample.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/repo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/repo.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Table/TableMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Table/TableMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/calculator/Entries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/calculator/Entries.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fsm/TableViewSample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fsm/TableViewSample.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,9 +42,12 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last.edited.regexp" value="e-5" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/New folder/ProgrammableCalculator-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../dictionary.jar!/" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="Application.UITwo">
+  <component name="RunManager" selected="Application.TableMain">
     <configuration name="Calculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="calculator.Calculator" />
       <module name="Calculator" />
@@ -91,6 +87,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="fsm.Test" />
+      <module name="Calculator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fsm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UITwo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="uitwo.UITwo" />
       <module name="Calculator" />
@@ -104,26 +113,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="j" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="fsm.j" />
-      <module name="Calculator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="fsm.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.UITwo" />
         <item itemvalue="Application.TableMain" />
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.UITwo" />
         <item itemvalue="Application.Calculator" />
         <item itemvalue="Application.TableViewSample" />
-        <item itemvalue="Application.j" />
       </list>
     </recent_temporary>
   </component>
@@ -154,25 +150,49 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state width="1493" height="565" key="GridCell.Tab.0.bottom" timestamp="1583132556248">
+    <state x="549" y="175" key="FileChooserDialogImpl" timestamp="1583228950458">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="565" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1583132556248" />
-    <state width="1493" height="565" key="GridCell.Tab.0.center" timestamp="1583132556248">
+    <state x="549" y="175" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1583228950458" />
+    <state width="1493" height="565" key="GridCell.Tab.0.bottom" timestamp="1583340106132">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="565" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1583132556248" />
-    <state width="1493" height="565" key="GridCell.Tab.0.left" timestamp="1583132556248">
+    <state width="1493" height="565" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1583340106132" />
+    <state width="1493" height="565" key="GridCell.Tab.0.center" timestamp="1583340106132">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="565" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1583132556248" />
-    <state width="1493" height="565" key="GridCell.Tab.0.right" timestamp="1583132556248">
+    <state width="1493" height="565" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1583340106132" />
+    <state width="1493" height="565" key="GridCell.Tab.0.left" timestamp="1583340106132">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="565" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1583132556248" />
-    <state x="477" y="245" key="com.intellij.ide.util.TipDialog" timestamp="1583131205565">
+    <state width="1493" height="565" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1583340106132" />
+    <state width="1493" height="565" key="GridCell.Tab.0.right" timestamp="1583340106132">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="477" y="245" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1583131205565" />
+    <state width="1493" height="565" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1583340106132" />
+    <state width="1493" height="309" key="GridCell.Tab.1.bottom" timestamp="1583299631517">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="309" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1583299631517" />
+    <state width="1493" height="309" key="GridCell.Tab.1.center" timestamp="1583299631517">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="309" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1583299631517" />
+    <state width="1493" height="309" key="GridCell.Tab.1.left" timestamp="1583299631517">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="309" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1583299631517" />
+    <state width="1493" height="309" key="GridCell.Tab.1.right" timestamp="1583299631517">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="309" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1583299631517" />
+    <state x="249" y="0" key="SettingsEditor" timestamp="1583228956889">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="249" y="0" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1583228956889" />
+    <state x="477" y="245" key="com.intellij.ide.util.TipDialog" timestamp="1583329258212">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="477" y="245" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1583329258212" />
   </component>
 </project>
