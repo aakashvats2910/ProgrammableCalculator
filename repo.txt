@@ -1,4 +1,3 @@
 vark,6879,34,min,Variable
-ai,784,1,km,Variable
-hj,5678,43,s,Variable
+hj,678,43,s,Variable
 hj4,5678,4378,s,Variable

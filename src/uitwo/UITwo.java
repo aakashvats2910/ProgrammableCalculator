@@ -1,11 +1,9 @@
 package uitwo;
 
 import Table.TableMain;
-import calculator.Entries;
+import calculator_api.Entries;
 import fsm.FSM;
 import javafx.application.Application;
-import javafx.beans.value.ChangeListener;
-import javafx.beans.value.ObservableValue;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
@@ -105,17 +103,12 @@ public class UITwo extends Application {
         }
 
         nameTextField.textProperty().addListener((observable, oldvalue, newValue) -> {
-            addButton.setDisable(false);
+            addButton.setDisable(true);
             fsmName.setText("");
-            if (!nameTextField.getText().isEmpty()) {
-                if (nameTextField.getText().matches("[a-zA-Z_][a-zA-Z0-9_]*")) {
-                    fsmName.setText("");
-                } else {
-                    fsmName.setText("Wrong!");
-                    addButton.setDisable(true);
-                }
+            fsmName.setText(FSM.checkVariableName(nameTextField.getText()));
+            if (fsmName.getText().isEmpty() || fsmName.getText().equals("")) {
+                addButton.setDisable(false);
             }
-            message.setText("");
         });
 
         valueTextField.textProperty().addListener((observable, oldvalue, newValue) -> {

@@ -1,7 +1,8 @@
 package Table;
 
-import calculator.Entries;
-import fsm.StateTextFieldTableCell;
+import calculator_api.Entries;
+import calculator_api.StateTextFieldTableCell;
+import fsm.FSM;
 import javafx.application.Application;
 import javafx.beans.binding.Bindings;
 import javafx.collections.FXCollections;
@@ -17,8 +18,8 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
-import javafx.scene.text.Text;
 import javafx.stage.Stage;
+import uitwo.UITwo;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -65,8 +66,6 @@ public class TableMain extends Application {
 
         table.getColumns().addAll(Name, Measure, Error, Units, Type);
 
-        final HBox addLayout = new HBox();
-
         final HBox hBox = new HBox();
         hBox.setSpacing(20);
         hBox.setPadding(new Insets(10, 0, 0, 10));
@@ -80,15 +79,27 @@ public class TableMain extends Application {
         final VBox vbox = new VBox();
         vbox.setSpacing(5);
         vbox.setPadding(new Insets(10, 0, 0, 10));
-        vbox.getChildren().addAll(table, searchLayout, hBox, errMessageLabel);
+        vbox.getChildren().addAll(table, searchLayout, errMessageLabel, hBox);
 
-        errMessageLabel.setFont(Font.font("Arial",18));
+        errMessageLabel.setFont(Font.font("Arial",16));
         errMessageLabel.setTextFill(Color.web("#FF0000"));
 
         updateButton.setDisable(true);
         deleteButton.setDisable(true);
 
         ((Group) scene.getRoot()).getChildren().addAll(vbox);
+
+        searchField.textProperty().addListener((a, b, c) -> {
+            errMessageLabel.setText("  " + FSM.checkVariableName(searchField.getText()));
+        });
+
+        createButton.setOnAction(event -> {
+            try {
+                UITwo uiTwo = new UITwo();
+                uiTwo.start(new Stage());
+                stage.close();
+            } catch (Exception e) { }
+        });
 
         exitButton.setOnAction(event -> stage.close());
 

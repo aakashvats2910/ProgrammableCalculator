@@ -12,6 +12,8 @@ public class FSM {
     private static int currentCharNdx; // The index of the current character
     private static boolean running; // The flag that specifies if it is running
 
+    private static String nameError = "";
+
     /**********
      * This private method display the input line and then on a line under it
      * displays an up arrow at the point where an error was detected. This method is
@@ -28,7 +30,7 @@ public class FSM {
         // Display a line with enough spaces so the up arrow point to the point of an
         // error
         for (int ndx = 0; ndx < currentCharNdx; ndx++)
-            result += " ";
+            result += "  ";
 
         // Add the up arrow to the end of the second line
         return result + "\u21EB"; // A Unicode up arrow with a base
@@ -328,4 +330,18 @@ public class FSM {
                 return "";
         }
     }
+
+    public static String checkVariableName(String name) {
+        try {
+            if (name.matches("[a-zA-Z_][a-zA-Z_0-9]*")) {
+                return "";
+            } else {
+                nameError = name.substring(0, name.length() - 1);
+                return "  " + nameError + "\u21EB";
+            }
+        } catch (Exception e) {
+            return "";
+        }
+    }
+
 }
