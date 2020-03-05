@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="calculatorapi">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../JAR_FILES/calculatorapi.jar!/" />
+      <root url="jar://$PROJECT_DIR$/calculatorapi.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

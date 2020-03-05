@@ -338,8 +338,6 @@ public class TableMain extends Application {
         } catch (Exception e) {
             System.out.println("ERROR =======00 :: " + e.getMessage());
         }
-
-
     }
 
 }
