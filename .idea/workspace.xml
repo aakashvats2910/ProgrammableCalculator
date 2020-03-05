@@ -7,31 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f4312af-f507-4dc4-b97a-60e1f669a24c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Calculator_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/calculatorapi.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/dictionary.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/dictionary.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Calculator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Calculator.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Table/TableMain$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Table/TableMain$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Table/TableMain$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Table/TableMain$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Table/TableMain$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Table/TableMain$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Table/TableMain$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Table/TableMain$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Table/TableMain$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Table/TableMain$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Table/TableMain$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Table/TableMain$6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Table/TableMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Table/TableMain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/calculator/Entries$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/calculator/Entries.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/fsm/StateTextFieldTableCell.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/fsm/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/fsm/Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/uitwo/UITwo.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/uitwo/UITwo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mymath.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/repo.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Table/TableMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Table/TableMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/calculator/Entries.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fsm/FSM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fsm/FSM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fsm/StateTextFieldTableCell.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fsm/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fsm/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uitwo/UITwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uitwo/UITwo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,22 +155,22 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="549" y="175" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1583342199914" />
-    <state width="1493" height="402" key="GridCell.Tab.0.bottom" timestamp="1583345743588">
+    <state width="1493" height="402" key="GridCell.Tab.0.bottom" timestamp="1583345837854">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="402" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1583345743588" />
-    <state width="1493" height="402" key="GridCell.Tab.0.center" timestamp="1583345743588">
+    <state width="1493" height="402" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1583345837854" />
+    <state width="1493" height="402" key="GridCell.Tab.0.center" timestamp="1583345837854">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="402" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1583345743588" />
-    <state width="1493" height="402" key="GridCell.Tab.0.left" timestamp="1583345743588">
+    <state width="1493" height="402" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1583345837854" />
+    <state width="1493" height="402" key="GridCell.Tab.0.left" timestamp="1583345837854">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="402" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1583345743588" />
-    <state width="1493" height="402" key="GridCell.Tab.0.right" timestamp="1583345743588">
+    <state width="1493" height="402" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1583345837854" />
+    <state width="1493" height="402" key="GridCell.Tab.0.right" timestamp="1583345837854">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="402" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1583345743588" />
+    <state width="1493" height="402" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1583345837854" />
     <state width="1493" height="309" key="GridCell.Tab.1.bottom" timestamp="1583299631517">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
