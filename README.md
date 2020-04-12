@@ -5,5 +5,5 @@ The proejct achieves the way of doing calculation in simple way as well as we ca
 
 The usage highly depends on the users.
 
-Thank!
+Thanks!<br/>
 In order to get any help raise an issue in repository!
